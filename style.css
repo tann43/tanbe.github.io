@@ -1,0 +1,173 @@
+.navbar {
+    background-color: white;
+    padding: 16px;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .nav-links a:visited {
+    color: red;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+  
+    .nav-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-toggle:focus + .nav-links,
+  .nav-links:hover {
+      display: flex;
+  }
+  
+  .nav-links li {
+      margin: 10px 0;
+  }
+  }
+#container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#text {
+
+}
+
+h3 {
+    font-size: 30px;
+    margin:0;
+    
+}
+
+h1 {
+    font-size: 60px;
+    margin:0;
+}
+
+#firee{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+
+#hobby {
+    width: 80%;
+    margin: 100px auto;
+}
+
+
+#hobby-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.box {
+    width: 80%;
+    border: 1px solid black;
+    margin: 2px;
+    background-color: aquamarine;
+}
+
+h5 {
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 50px;
+    margin: 70px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    #container {
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #container h3 {
+        font-size: 28px;
+    }
+
+    #container h1 {
+        font-size: 36px;
+    }
+
+    #container img {
+        width: 500px;
+    }
+
+    #hobby-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
